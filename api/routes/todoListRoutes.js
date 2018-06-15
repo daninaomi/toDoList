@@ -24,6 +24,10 @@ module.exports = function (app) {
   //   .put(user.update_a_task)
   //   .delete(user.delete_a_task);
 
+  app.route('/users/login')
+    .get(user.login_a_user)
+    .post(user.login_a_user);
+
   // appointment Routes
   // app.route('/appointments')
   //   .get(appointment.list_all_appointments)
